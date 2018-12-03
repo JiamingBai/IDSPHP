@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Quality</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Data Analysis</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About This Dataset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quality.html">Data Quality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prediction.html">Prediction</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/data-quality.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 mx-auto">
+            <div class="page-heading">
+              <h1>Data Quality</h1>
+              <span class="subheading"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 mx-auto">
+            <div class="post-preview">
+              <h2 class="post-title">
+                Data accountablility:
+              </h2>
+              <p>This dataset directly comes from the Austin Animal Center Shelter. As part of the City of Austin Open Data Initiative, the Austin Animal Center makes available its collected dataset that contains statistics and outcomes of animals entering the Austin Animal Services system. Therefore, we think it is safe to conclude that this data is accountable.</p>
+             </div>
+
+
+              <div class="post-preview">
+              <h2 class="post-title">
+                Data coherency:
+              </h2>
+              <p>Overall the data is relatively coherent. Each column has their appropriate values and the categorical values are consistent throughout the dataset. One thing that we noticed during data cleaning is that there are duplicate values for animal_id. After we took a closer look, most of the information across duplicate rows are the same, except age_upon_outcome. For example: one row would say 6 years and another says 7 years. We decided to keep the first occurrence of the id and maintain the uniqueness of animal_id.</p>
+             </div>
+
+
+              <div class="post-preview">
+              <h2 class="post-title">
+                Data completeness:
+              </h2>
+              <p>The dataset contains shelter outcomes of several types of animals and breeds from 10/1/2013 to 9 months ago. The data has no missing values in the column of outcome, therefore, at least every animal in the dataset has a recorded outcome. There are some missing values in name and outcome_subtype, but since these are not our main focus of analysis, we don’t think these missing values compromise the completeness of data.</p>
+             </div>
+
+              <div class="post-preview">
+              <h2 class="post-title">
+                Data correctness:
+              </h2>
+              <p>We think the data makes sense in many ways. For example: most animals that had rabies and died are bats. The animal types in the dataset also seem correct because domestic shorthair is a common breed across the country.</p>
+             </div>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Jiaming Bai and Fan Qian</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

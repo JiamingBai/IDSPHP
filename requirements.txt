@@ -1,0 +1,9 @@
+django
+gunicorn
+django-heroku
+requests
+scikit-learn
+numpy
+scipy
+pandas
+joblib

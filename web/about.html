@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data-Quality-05839-Final-Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Data Analysis</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About This Dataset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quality.html">Data Quality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prediction.html">Prediction</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/about-data-set.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 mx-auto">
+            <div class="page-heading">
+              <h1>About this data set</h1>
+              <span class="subheading">The dataset mainly records the outcome of the accepted animals and general information about them such as breed, age and color.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 col-md-11 mx-auto">
+          <h2 class="post-title">
+            Data Cleaning:
+          </h2>
+          <p>First, we used python scripts to separate column “sex upon outcome” to columns of sex(female,male) and outcome(neutered,spayed,intact), and separate rows with unknown “sex upon outcome” will have unknown for both sex and outcome.</p>
+          <p>Second, we found there are duplicated animal_ids, thus we used Microsoft Excel to remove duplicate ones and only keep the first occurance.</p>
+          <p>In the original dataset, the breed of the animal are carefully documented and some of them are too detailed that we will end up with a lot of categories for breed. Therefore, we created a new column called dominant breed to narrow down the number of types of breeds in the data.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-11 col-md-11 mx-auto">
+          <h2 class="post-title">
+            Where did this data come from?
+          </h2>
+          <p>This dataset was found on Kaggle and is publicly available for download <a href="https://www.kaggle.com/aaronschlegel/austin-animal-center-shelter-outcomes-and#aac_shelter_cat_outcome_eng.csv">here</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-11 col-md-11 mx-auto">
+          <h2 class="post-title">
+            Outcome types and subtypes
+          </h2>
+          <p>
+            <ul><b>Adoption:</b> the animal was adopted to a home</ul>
+            <ul><b>Barn Adoption:</b> the animal was adopted to live in a barn</ul>
+            <ul><b>Offsite Missing:</b> the animal went missing for unknown reasons at a partner offsite location</ul>
+            <ul><b>In-Foster Missing:</b> the animal is missing after being placed in a foster home</ul>
+            <ul><b>In-Kennel Missing:</b> the animal is missing after being transferred to a kennel facility</ul>
+            <ul><b>Possible Theft:</b>  Although not confirmed, the animal went missing as a result of theft from facility</ul>
+            <ul><b>Barn Transfer:</b> The animal was transferred to a facility for adoption into a barn environment</ul>
+            <ul><b>SNR:</b> SNR refers to the city of Austin's Shelter-Neuter-Release program. I believe the outcome is representative of the animal being released.</ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Jiaming Bai and Fan Qian</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
